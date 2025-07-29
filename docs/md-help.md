@@ -32,11 +32,20 @@ export default defineComponent({
 ## Admonitions
 
 !!! note "Пример note"
-
     Improve your resumes with Resume Matcher. Get insights, keyword suggestions and tune your resumes to job descriptions. 
 
 ??? info "Пример info collapsed"
-
     Improve your resumes with Resume Matcher. Get insights, keyword suggestions and tune your resumes to job descriptions. 
+
+## Диаграммы
+
+```mermaid
+graph LR
+  A[Start] --> B{Failure?};
+  B -->|Yes| C[Investigate...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Succes];
+```
 
 Более подробнее - [squidfunk.github.io](https://squidfunk.github.io/mkdocs-material/reference/)

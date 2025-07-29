@@ -1,5 +1,5 @@
 site_name: Документация на advamatic 
-site_url: https://mydomain.org/mysite
+site_url: https://advm-docs.github.io
 theme:
   name: material
   font:
@@ -19,6 +19,8 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
+  features:
+    - navigation.footer
 
 markdown_extensions:
   - attr_list
@@ -28,9 +30,16 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
   - pymdownx.details
       
+nav:
+  - Начало: index.md
+  - Памятка по md: md-help.md
