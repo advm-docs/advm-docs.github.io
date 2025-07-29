@@ -2,9 +2,9 @@ site_name: Документация на advamatic
 site_url: https://advm-docs.github.io
 theme:
   name: material
-  font:
-    text: Merriweather Sans
-    code: Red Hat Mono
+  #font:
+    #text: Merriweather Sans
+    #code: Red Hat Mono
   palette: 
     # Dark mode
     - scheme: slate
@@ -21,6 +21,8 @@ theme:
       accent: deep orange
   features:
     - navigation.footer
+    - navigation.sections
+    - navigation.indexes
 
 markdown_extensions:
   - attr_list
@@ -39,7 +41,12 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+  - def_list
+
       
 nav:
   - Начало: index.md
+  - Разделы (вкладки): 
+    - sections/index.md
+    - Управление печатью: sections/print-manage.md
   - Памятка по md: md-help.md
