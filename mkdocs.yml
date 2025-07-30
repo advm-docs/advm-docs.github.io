@@ -49,4 +49,13 @@ nav:
   - Разделы (вкладки): 
     - sections/index.md
     - Управление печатью: sections/print-manage.md
+    - Переразмещение заказов: sections/reorder.md
+    - Терминал менеджера: sections/manager-terminal.md
+    - Монитор диспетчера: sections/dispatcher.md
+    - Прайс-листы: sections/raprices.md
+    - Терминал печатника: sections/print-terminal.md
+    - Терминал постобработки: sections/processing-terminal.md
+    - Терминал водителя: sections/driver-terminal.md
+    - Монитор логистики: sections/logistic-terminal.md
+    - Склад материалов: sections/storage.md
   - Памятка по md: md-help.md
