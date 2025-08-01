@@ -21,11 +21,16 @@ theme:
       accent: deep orange
   features:
     - navigation.footer
-    - navigation.sections
+    # - navigation.sections
     - navigation.indexes
+
+plugins:
+  - glightbox
 
 markdown_extensions:
   - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: _span
@@ -50,7 +55,9 @@ nav:
     - sections/index.md
     - Управление печатью: sections/print-manage.md
     - Переразмещение заказов: sections/reorder.md
-    - Терминал менеджера: sections/manager-terminal.md
+    - Терминал менеджера: 
+      - sections/manager-terminal/index.md
+      - Строка заказа: sections/manager-terminal/order-record.md
     - Монитор диспетчера: sections/dispatcher.md
     - Прайс-листы: sections/raprices.md
     - Терминал печатника: sections/print-terminal.md
